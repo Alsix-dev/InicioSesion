@@ -1,0 +1,5 @@
+1.- Del boceto - estructura: div#alternar y div#ri-sesion pasan a ser clases.
+2.- Del boceto - estructura: div#logo y div#ri-alternar pasan a ser clases.
+3.- Del boceto - estructura: section#ri-sesion se le quita el id. Ahora para
+				estilar solo nos referenciamos al section
+				dentro del div.ri-sesion.
