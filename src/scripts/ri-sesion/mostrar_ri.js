@@ -1,4 +1,5 @@
 import * as sesion from "../../componentes/iniciarsesion/inicio_barrel.js";
+import * as registro from "../../componentes/registro/registro_barrel.js";
 import * as ri from '../../componentes/ri-sesion/ri_sesion_barrel.js';
 
 const padre = document.querySelector('.ri-sesion');
