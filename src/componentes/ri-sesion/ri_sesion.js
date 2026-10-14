@@ -1,19 +1,16 @@
-/* 
-    1) Titulo: Iniciar sesion | Crear cuenta
-*/ 
-export const MenuInteractivo = (
-    titulo,
-    form,
-    alternativas = null
-) => {
-    return (
-        `
-            <section>
-                <h2>${titulo}</h2>
-                ${form}
-            </section>
+import * as ri from '../../componentes/ri-sesion/ri_sesion_barrel.js';
 
-            ${alternativas && alternativas}
-        `
+export const ConstructorMenu = (datos, complemento, alternativa) => {
+    const form_sesion = ri.Formulario_ri(
+        datos,
+        complemento
     );
+
+    const form = ri.MenuInteractivo(
+        datos.boton,
+        form_sesion,
+        alternativa
+    );
+
+    return form;
 }

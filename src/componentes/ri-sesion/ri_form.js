@@ -1,15 +1,10 @@
-/* 
-    1) ID: registro | sesion
-    2) Botones: button=ri-registro o ri-sesion
-*/
-
-export const Formulario_ri = (datos, complemento, id) => {
+export const Formulario_ri = (datos, complemento) => {
     return (
         `
             <form>
                 ${datos.inputs}
                 ${complemento && complemento}
-                <button type="submit" id="ri-${id}">
+                <button type="submit">
                     ${datos.boton}
                 </button>
             </form>

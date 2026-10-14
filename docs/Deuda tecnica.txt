@@ -21,3 +21,6 @@
 	en lugar de crear un componente solo para inicio y otro para registro?
 
 7.- Componente alternar_ri.js y se le pasa el boton y titulo
+
+8.- Poner alternativas de registro (google, github, etc...) ya que luego en el inicio
+	debe haber una cuenta creada con una alternativa para usar esas alternativas como inicio de sesion.
