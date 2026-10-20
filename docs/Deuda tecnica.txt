@@ -26,3 +26,8 @@
 	debe haber una cuenta creada con una alternativa para usar esas alternativas como inicio de sesion.
 
 [✓] --- 9.- En complementos poner un id que identifique el de registro y el de sesion
+
+[✓] --- 10.- Hacer que DOMContentLoaded compruebe que el elemento exista antes de
+		insertar el contenido ya que antes de que se dispare el
+		DomContentLoaded puede dispararse el script y ese evento ya paso
+		no llamando asi al Callback.

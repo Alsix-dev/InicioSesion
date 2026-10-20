@@ -3,3 +3,14 @@
 3.- Del boceto - estructura: section#ri-sesion se le quita el id. Ahora para
 				estilar solo nos referenciamos al section
 				dentro del div.ri-sesion.
+
+
+4.- Del boceto - estructura: div#a-sesion cambio por "auth-alternativas"
+				siendo auth = autentificacion.
+
+5.- Del boceto - estructura: section#ri-sesion cambio a "#auth"
+				relacionando el inicio y registro con autentificar.
+
+6.- De la estructura: Modificamos los componentes inicio sesion, registro para
+			poder desacoplar cada funcionalidad y componente
+			teniendo una menor granularidad.

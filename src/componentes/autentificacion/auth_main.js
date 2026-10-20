@@ -5,11 +5,17 @@ export const CrearMenu = (
 ) => {
     return (
         `
-            <section>
+            <section id="auth">
                 <h2>${titulo}</h2>
                 ${formulario}
             </section>
-            ${alternativas}
+            ${alternativas && 
+                `
+                    <div class="auth-alternativas">
+                        ${alternativas}
+                    </div>
+                `
+            }
         `
     );
 }

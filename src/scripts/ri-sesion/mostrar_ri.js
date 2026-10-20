@@ -1,11 +1,13 @@
 import { ConstructorMenu } from "../auth_sesion/auth_sesion_barrel.js";
 import { ConfigSesion } from "../configuraciones/configs_barrel.js";
 
-const padre = document.querySelector('.ri-sesion');
+const MostrarSesion = () => {
+    const padre = document.querySelector('.auth');
+    if(!padre) return;
 
-document.addEventListener('DOMContentLoaded', () => {
-    const content = ConstructorMenu(ConfigSesion);
-    padre.innerHTML = content;
-});
+    padre.innerHTML = ConstructorMenu(ConfigSesion);
+}
 
-// Pasamos solo el inicio de sesion como test.
+if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', MostrarSesion);
+} else MostrarSesion();
