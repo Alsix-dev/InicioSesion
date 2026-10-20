@@ -1,7 +1,7 @@
-export const Alternativa_sesion = () => {
+export const AlternativaSesion = () => {
     return (
         `
-            <div className="alternativas">
+            <div class="alternativas">
                 <a href="/auth/google">Google</a>
                 <a href="/auth/github">GitHub</a>
             </div>    

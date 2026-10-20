@@ -10,17 +10,19 @@
 	Empezar por inicio de sesion y luego el de registro para alternar
 	en una SPA.
 
-4.- Cambiar "#ir-r-sesion" por algo mas relacionado a su funcion que es crear
+[✓] --- 4.- Cambiar "#ir-r-sesion" por algo mas relacionado a su funcion que es crear
 
 5.- Alternar ri:
 	. Crear un componente para inicar sesion donde maneje su form.
 	. Crear un componente para registro donde maneje su form.
 	. Un componente para cada alternar respecto a su ri.
 
-[✓] == 6.- Podria crear un componente donde le pase el titulo, formulario y contenido extra
+[✓] --- 6.- Podria crear un componente donde le pase el titulo, formulario y contenido extra
 	en lugar de crear un componente solo para inicio y otro para registro?
 
 7.- Componente alternar_ri.js y se le pasa el boton y titulo
 
 8.- Poner alternativas de registro (google, github, etc...) ya que luego en el inicio
 	debe haber una cuenta creada con una alternativa para usar esas alternativas como inicio de sesion.
+
+[✓] --- 9.- En complementos poner un id que identifique el de registro y el de sesion

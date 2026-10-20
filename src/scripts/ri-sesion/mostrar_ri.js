@@ -1,15 +1,11 @@
-import * as sesion from "../../componentes/iniciarsesion/inicio_barrel.js";
-// import * as registro from "../../componentes/registro/registro_barrel.js";
-import * as ri from '../../componentes/ri-sesion/ri_sesion_barrel.js';
+import { ConstructorMenu } from "../auth_sesion/auth_sesion_barrel.js";
+import { ConfigSesion } from "../configuraciones/configs_barrel.js";
 
 const padre = document.querySelector('.ri-sesion');
 
 document.addEventListener('DOMContentLoaded', () => {
-    const datosForm = sesion.DatosFormSesion();
-    const complemento = sesion.ComplementoSesion();
-    const alternativa = sesion.Alternativa_sesion();
-
-    const content = ri.ConstructorMenu(datosForm, complemento, alternativa);
-
+    const content = ConstructorMenu(ConfigSesion);
     padre.innerHTML = content;
 });
+
+// Pasamos solo el inicio de sesion como test.
