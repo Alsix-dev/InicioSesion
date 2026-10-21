@@ -6,6 +6,8 @@ import {
 export const ConfigSesion = {
     titulo: "Iniciar sesión",
     boton: "Iniciar sesión",
+    id: "IniciarSesion",
+
     campos: [
         {
             tipo: "email",
@@ -21,5 +23,10 @@ export const ConfigSesion = {
         }
     ],
     complementos: ComplementoSesion,
-    alternativas: AlternativaSesion
+    alternativas: AlternativaSesion,
+
+    alt: {
+        titulo: "Bienvenido, aun no tienes una cuenta?",
+        boton: "Registrate"
+    }
 }

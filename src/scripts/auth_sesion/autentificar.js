@@ -3,6 +3,10 @@ import {
     CrearMenu 
 } from "../../componentes/autentificacion/auth_barrel.js";
 
+import {
+    CrearAlternativa
+} from "../../componentes/alternaciones/alt_barrel.js";
+
 export const ConstructorMenu = (auth) => {
     const form = CrearFormulario(
         auth.campos,
@@ -16,5 +20,11 @@ export const ConstructorMenu = (auth) => {
         auth.alternativas?.() ?? ''
     );
 
-    return menu;
+    const alternar = CrearAlternativa(
+        auth.alt.titulo,
+        auth.alt.boton,
+        auth.id
+    );
+
+    return { alternar, menu };
 }

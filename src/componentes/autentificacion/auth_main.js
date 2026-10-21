@@ -5,7 +5,7 @@ export const CrearMenu = (
 ) => {
     return (
         `
-            <section id="auth">
+            <section class="auth_main">
                 <h2>${titulo}</h2>
                 ${formulario}
             </section>

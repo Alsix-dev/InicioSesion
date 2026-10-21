@@ -5,6 +5,8 @@ import {
 export const ConfigRegistro = {
     titulo: "Registrar cuenta",
     boton: "Crear cuenta",
+    id: "RegistrarCuenta",
+
     campos: [
         {
             tipo: "text",
@@ -25,5 +27,10 @@ export const ConfigRegistro = {
             required: true
         }
     ],
-    complementos: ComplementoRegistro
+    complementos: ComplementoRegistro,
+
+    alt: {
+        titulo: "Ya tienes una cuenta creada?",
+        boton: "Inicia sesión"
+    }
 }

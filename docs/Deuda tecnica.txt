@@ -31,3 +31,6 @@
 		insertar el contenido ya que antes de que se dispare el
 		DomContentLoaded puede dispararse el script y ese evento ya paso
 		no llamando asi al Callback.
+
+11.- El div#alt en div#logo debe ser estatico por ahora y luego usar un
+		insert/inner que ponga el titulo + boton

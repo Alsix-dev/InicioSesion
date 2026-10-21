@@ -1,4 +1,4 @@
-1.- Del boceto - estructura: div#alternar y div#ri-sesion pasan a ser clases.
+[x] --- 1.- Del boceto - estructura: div#alternar y div#ri-sesion pasan a ser clases.
 2.- Del boceto - estructura: div#logo y div#ri-alternar pasan a ser clases.
 3.- Del boceto - estructura: section#ri-sesion se le quita el id. Ahora para
 				estilar solo nos referenciamos al section
@@ -14,3 +14,10 @@
 6.- De la estructura: Modificamos los componentes inicio sesion, registro para
 			poder desacoplar cada funcionalidad y componente
 			teniendo una menor granularidad.
+
+7.- Del boceto - estructura: div.ri-sesion por div#auth_sesion
+			relacionando mejor el contenedor con el concepto.
+
+8.- Del boceto - estructura: div.alternar pasa a ser div#alt de alternar.
+
+9.- Del boceto - estructura: button#ir-r-sesion pasa a ser button#alt-auth.

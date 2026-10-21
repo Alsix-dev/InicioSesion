@@ -1,2 +1,2 @@
-export { ConfigRegistro  } from "./config_registro.js";
-export { ConfigSesion } from "./config_sesion.js";
+export { ConfigRegistro  } from "./auth_config_registro.js";
+export { ConfigSesion } from "./auth_config_sesion.js";
