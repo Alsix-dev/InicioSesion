@@ -26,7 +26,7 @@ export const ConfigSesion = {
     alternativas: AlternativaSesion,
 
     alt: {
-        titulo: "Bienvenido, aun no tienes una cuenta?",
+        titulo: "¡Bienvenido denuevo!",
         boton: "Registrate"
     }
 }

@@ -11,7 +11,8 @@ export const CrearMenu = (
             </section>
             ${alternativas && 
                 `
-                    <div class="auth-alternativas">
+                    <div class="auth_alternativas">
+                        <span>Continua con google u otras opciones</span>
                         ${alternativas}
                     </div>
                 `

@@ -1,18 +1,18 @@
 1.- Asignar un icono al logo y un texto (decidir si poner algo simple o no).
-2.- Segun ri-sesion:
+[✓] --- 2.- Segun ri-sesion:
 	. Si ri-sesion inicia sesion -> 
 		Alternar: "Bienvenido denuevo" + boton crear cuenta.
 		
 	. Si ri-sesion registro -> 
 		Alternar: "Ya tienes una cuenta?" + boton iniciar sesion.
 
-3.- div.ri-alternar y div.ri-sesion deben alternar segun la opcion.
+[✓] --- 3.- div.ri-alternar y div.ri-sesion deben alternar segun la opcion.
 	Empezar por inicio de sesion y luego el de registro para alternar
 	en una SPA.
 
 [✓] --- 4.- Cambiar "#ir-r-sesion" por algo mas relacionado a su funcion que es crear
 
-5.- Alternar ri:
+[✓] --- 5.- Alternar ri:
 	. Crear un componente para inicar sesion donde maneje su form.
 	. Crear un componente para registro donde maneje su form.
 	. Un componente para cada alternar respecto a su ri.
@@ -20,7 +20,7 @@
 [✓] --- 6.- Podria crear un componente donde le pase el titulo, formulario y contenido extra
 	en lugar de crear un componente solo para inicio y otro para registro?
 
-7.- Componente alternar_ri.js y se le pasa el boton y titulo
+[✓] --- 7.- Componente alternar_ri.js y se le pasa el boton y titulo
 
 8.- Poner alternativas de registro (google, github, etc...) ya que luego en el inicio
 	debe haber una cuenta creada con una alternativa para usar esas alternativas como inicio de sesion.
@@ -34,3 +34,7 @@
 
 11.- El div#alt en div#logo debe ser estatico por ahora y luego usar un
 		insert/inner que ponga el titulo + boton
+
+12.- Aplicar CSS al menu.
+
+13.- Agregar un texto en alternativas que digan "Continua con google u otras opciones"
