@@ -1,0 +1,33 @@
+/* Resets, tipografia, colores, variables */
+@import "./layouth.css";
+@import "./componentes/alt.css";
+@import "./componentes/auth.css";
+
+:root {
+    --azul-oscuro: #171653;
+    --azul: #087cf0;
+    --blanco: #fff;
+    --texto: #24243f;
+    --fondo-input: #f0f2ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, #app {
+    min-height: 100vh;
+    width: 100%;
+}
+
+#app {
+    display: flex;
+    height: auto;
+    overflow: hidden;
+}

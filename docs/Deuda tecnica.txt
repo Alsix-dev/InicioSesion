@@ -35,6 +35,6 @@
 11.- El div#alt en div#logo debe ser estatico por ahora y luego usar un
 		insert/inner que ponga el titulo + boton
 
-12.- Aplicar CSS al menu.
+[✓] --- 12.- Aplicar CSS al menu.
 
-13.- Agregar un texto en alternativas que digan "Continua con google u otras opciones"
+[✓] --- 13.- Agregar un texto en alternativas que digan "Continua con google u otras opciones"

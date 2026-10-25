@@ -1,0 +1,70 @@
+#alt {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 24px;
+    flex: 1;
+    padding: 40px 48px;
+    min-width: 0;
+    min-height: 100vh;
+    color: var(--blanco);
+    background: 
+        radial-gradient(ellipse at 10% 30%, #ec4caa 0%, transparent 16%),
+        radial-gradient(ellipse at 85% 15%, #743bd8 0%, transparent 25%),
+        radial-gradient(ellipse at 25% 90%, #405fd4 0%, transparent 25%),
+        linear-gradient(140deg, #10104c, #22206b 65%, #171653);
+}
+
+#alt #logo {
+    justify-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+#alt #logo span {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#alt #logo h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+#alt .alt_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 24px;
+    gap: 24px;
+}
+
+#alt .alt_main h2 {
+    font-weight: 700;
+    max-width: 450px;
+    font-size: clamp(2rem, 3vw, 3rem);
+    line-height: 1.15;
+}
+
+#alt .alt_main button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: var(--blanco);
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#alt .alt_main button:hover {
+    background-color: rgb(255 255 255 / 20%);
+}
