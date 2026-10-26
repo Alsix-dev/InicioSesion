@@ -11,7 +11,8 @@ export const ConstructorMenu = (auth) => {
     const form = CrearFormulario(
         auth.campos,
         auth.complementos?.() ?? '',
-        auth.boton
+        auth.boton,
+        auth.formID
     );
 
     const menu = CrearMenu(

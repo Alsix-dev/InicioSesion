@@ -7,12 +7,14 @@ export const ConfigSesion = {
     titulo: "Iniciar sesión",
     boton: "Iniciar sesión",
     id: "IniciarSesion",
+    formID: "form-sesion",
 
     campos: [
         {
             tipo: "email",
             name: "email",
             placeholder: "Email",
+            autocomplete: "Email",
             required:true
         },
         {
