@@ -1,9 +1,15 @@
 export const AlternativaSesion = () => {
     return (
         `
-            <div class="alternativas">
-                <a href="/auth/google">Google</a>
-                <a href="/auth/github">GitHub</a>
+            <div class="auth_icons_alt">
+                <a href="#">
+                    <img src="../styles/iconos/google.png"
+                    alt="Google" width="28" height="28">
+                </a>
+                <a href="#">
+                    <img src="../styles/iconos/github.png"
+                    alt="Github" width="28" height="28">
+                </a>
             </div>    
         `
     );

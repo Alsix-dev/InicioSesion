@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     flex: 1;
     padding: 40px 48px;
     min-width: 0;
@@ -50,8 +51,12 @@
     background-color: var(--fondo-input);
     color: var(--texto);
     font: inherit;
-    transition: border-color 0.2s, box-shadow 0.2s;
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
+
+.auth_main > form > input:hover {
+    transform: translateY(-2px);
+} 
 
 .auth_main > form > input:focus {
     background-color: rgb(255 255 255 / 20%);
@@ -96,3 +101,16 @@
     gap: 24px;
 }
 
+#auth .auth_alternativas .auth_icons_alt {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.auth_alternativas .auth_icons_alt > a {
+    transition: transform 0.2s;
+}
+
+.auth_alternativas .auth_icons_alt > a:hover {
+    transform: translateY(-2px);
+}
