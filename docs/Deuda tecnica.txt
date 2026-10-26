@@ -43,6 +43,8 @@
 
 [✓] --- 14) Agregar los iconos de alternativas y un icono random de logo para simular.
 
+[✓] --- 14.5) Acomodar el componente de registro.
+
 15) Hacer el verificador de los campos de sesion y registro.
 
 16) Tomar los datos de registro.

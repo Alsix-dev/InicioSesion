@@ -64,13 +64,21 @@
     box-shadow: 0 0 0 2px rgb(8 124 240/15%);
 }
 
-#auth .auth_main #olvidar_password {
+#auth .auth_main #olvidar_password, 
+#auth .auth_main #terminos_condiciones {
     display: block;
     text-decoration: none;
-    text-align: end;
     color: var(--texto);
     font-size: 14px;
     text-underline-offset: 4px;
+}
+
+#auth .auth_main #olvidar_password {
+    text-align: end;
+}
+
+#auth .auth_main #terminos_condiciones {
+    text-align: center;
 }
 
 #auth .auth_main button[type="submit"] {
