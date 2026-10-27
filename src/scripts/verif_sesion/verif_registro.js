@@ -25,7 +25,7 @@ const VerificarNombre = (nombre) => {
     }
 
     if(nombre.trim() !== nombre){
-        console.log("El nombre no puede comenzar ni terminar con espacios");
+        console.log("El nombre no puede tener espacios");
         return false;
     }
     
@@ -78,8 +78,8 @@ const VerificarEmail = (email) => {
         return false;
     }
 
-    if((dominio.match(/\./g)).length > 1){
-        console.log("El dominio no puede tener más de un punto");
+    if((dominio.match(/\./g) || []).length > 2){
+        console.log("El dominio no puede tener más de dos puntos");
         return false;
     }
 
@@ -107,14 +107,20 @@ const VerificarPassword = (pass, validatePass) => {
         return false;
     }
 
+    const tieneNumero = pass.split('').some(c => !isNaN(c));
+    if(!tieneNumero){
+        console.log("La contraseña debe incluir al menos un numero");
+        return false;
+    }
+
     return true;
 }
 
 function VerificarRegistro(form){
-    const nombre = form.get("Name");
-    const email = form.get("Email");
-    const pass = form.get("Password");
-    const validatePass = form.get("VerifPassword");
+    const nombre = form.get("username");
+    const email = form.get("email");
+    const pass = form.get("new-password");
+    const validatePass = form.get("validate-password");
 
     const verifNombre = VerificarNombre(nombre);
     const verifEmail = VerificarEmail(email);
@@ -124,18 +130,16 @@ function VerificarRegistro(form){
 }
 
 function VerificarSesion(form){
-    const email = form.get("Email");
-    const pass = form.get("Password");
+    const email = form.get("email");
+    const pass = form.get("new-password");
 
-    if(email.length === 0){
-        console.log("Ingresa un email");
-        return false;
-    }
+    const verifEmail = VerificarEmail(email);
+
 
     if(pass.length === 0){
         console.log("Ingresa tu contraseña");
         return false;
     }
 
-    return true;
+    return verifEmail;
 }

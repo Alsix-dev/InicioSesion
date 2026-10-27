@@ -68,6 +68,13 @@
 	22.3) Validar por Backend.
 	22.4) Validar por SQL.
 
-[✓] ---23) Agregar en registro un validar contraseña.
+[✓] --- 23) Agregar en registro un validar contraseña.
 
 24) Agregar una lista de caracteres no permitidos.
+
+25) Agregar carteles de errores.
+
+[✓] --- 26) Validar en js segun el patron:
+	Ej: En contraseña falta validar en js que haya al menos un numero
+		y un caracter especial.
+	Ej: En sesion verificar el formato de email.

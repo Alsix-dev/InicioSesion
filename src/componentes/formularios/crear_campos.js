@@ -7,8 +7,8 @@ export const CrearCampos = (campos) => {
                 ${input.placeholder ? `placeholder="${input.placeholder}"` : ''}
                 ${input.required ? 'required' : ''}
                 ${input.pattern ? `pattern="${input.pattern}"` : ''}
-                ${input.minLenght ? `minlength="${input.minlength}"` : ''}
-                ${input.maxLenght ? `maxlength="${input.maxlength}"` : ''}
+                ${input.minlength ? `minlength="${input.minlength}"` : ''}
+                ${input.maxlength ? `maxlength="${input.maxlength}"` : ''}
                 ${input.title ? `title="${input.title}"` : ''}
                 ${input.autocomplete ? `autocomplete="${input.autocomplete}"` : ''}
             >
