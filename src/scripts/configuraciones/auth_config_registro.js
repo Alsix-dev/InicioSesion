@@ -13,28 +13,38 @@ export const ConfigRegistro = {
             tipo: "text",
             name: "Name",
             placeholder: "Nombre de usuario",
-            pattern:"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9._]+",
-            minLenght: 3,
-            maxLenght: 30,
+            pattern:"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9._ ]+",
+            minlength: 3,
+            maxlength: 30,
             title: "Usa de 3 a 30 caracteres: letras, números, espacios, puntos y guiones",
             autocomplete: "Name",
             required: true
         },
         {
             tipo: "email",
-            name: "email",
+            name: "Email",
             placeholder: "Email",
-            maxLenght: 254,
+            maxlength: 8,
+            maxlength: 254,
             autocomplete: "Email",
             required: true
         },
         {
             tipo: "password",
-            name: "password",
+            name: "Password",
             placeholder: "Ingresar contraseña",
             pattern:"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]+",
-            minLenght: 8,
-            maxLenght: 128,
+            minlength: 8,
+            maxlength: 128,
+            required: true
+        },
+        {
+            tipo: "password",
+            name: "VerifPassword",
+            placeholder: "Ingresar tu contraseña nuevamente",
+            pattern:"[A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9]+",
+            minlength: 8,
+            maxlength: 128,
             required: true
         }
     ],

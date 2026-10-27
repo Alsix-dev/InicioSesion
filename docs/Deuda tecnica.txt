@@ -45,29 +45,29 @@
 
 [✓] --- 14.5) Acomodar el componente de registro.
 
-15) Hacer el verificador de los campos de sesion y registro:
-	15.1) En Frontend.
-	15.2) En Backend.
+[✓] --- 15) Tomar los datos de registro.
 
-16) Tomar los datos de registro.
+16) Crear una base de datos SQL.
 
-17) Crear una base de datos SQL.
+17) Gestionar los datos en el inicio de sesion.
 
-18) Gestionar los datos en el inicio de sesion.
+[✓] --- 18) El cliente no puede registrarse hasta aceptar los terminos y condiciones.
 
-19) El cliente no puede registrarse hasta aceptar los terminos y condiciones.
-
-20) Si inicia sesion por google/github debe salir un cartel anunciando los terminos y
+19) Si inicia sesion por google/github debe salir un cartel anunciando los terminos y
 	condiciones y debe aceptarlos.
 
-21) Si inicia sesion por google/github debe salir un cartel anunciando que debe aceptar
+20) Si inicia sesion por google/github debe salir un cartel anunciando que debe aceptar
 	que se accedan a sus datos y aclarar que datos se accederan.
 
-22) Por ahora los terminos tienen un required, hacer luego que se habilite cuando
+21) Por ahora los terminos tienen un required, hacer luego que se habilite cuando
 	los campos se llenen.
 
-23) Validaciones:
-	[✓] --- 23.1) Validar por HTML.
-	23.2) Validar por JS.
-	23.3) Validar por Backend.
-	24.4) Validar por SQL.
+22) Validaciones:
+	[✓] --- 22.1) Validar por HTML.
+	[✓] --- 22.2) Validar por JS.
+	22.3) Validar por Backend.
+	22.4) Validar por SQL.
+
+[✓] ---23) Agregar en registro un validar contraseña.
+
+24) Agregar una lista de caracteres no permitidos.

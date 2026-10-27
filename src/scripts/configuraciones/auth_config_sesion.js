@@ -12,14 +12,14 @@ export const ConfigSesion = {
     campos: [
         {
             tipo: "email",
-            name: "email",
+            name: "Email",
             placeholder: "Email",
             autocomplete: "Email",
             required:true
         },
         {
             tipo: "password",
-            name: "password",
+            name: "Password",
             placeholder: "Ingresar contraseña",
             required: true
         }
