@@ -1,4 +1,4 @@
-1) Asignar un icono al logo y un texto (decidir si poner algo simple o no).
+[✓] --- 1) Asignar un icono al logo y un texto (decidir si poner algo simple o no).
 [✓] --- 2) Segun ri-sesion:
 	. Si ri-sesion inicia sesion -> 
 		Alternar: "Bienvenido denuevo" + boton crear cuenta.
@@ -59,7 +59,7 @@
 20) Si inicia sesion por google/github debe salir un cartel anunciando que debe aceptar
 	que se accedan a sus datos y aclarar que datos se accederan.
 
-21) Por ahora los terminos tienen un required, hacer luego que se habilite cuando
+[✓] --- 21) Por ahora los terminos tienen un required, hacer luego que se habilite cuando
 	los campos se llenen.
 
 22) Validaciones:

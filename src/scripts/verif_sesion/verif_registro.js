@@ -7,7 +7,7 @@ document.addEventListener('submit', (event) => {
     const formID = form.id;
 
     if(formID === "form-registro"){
-        if(VerificarRegistro(formData)){
+        if(VerificarRegistro(formData, form)){
             console.log("La cuenta se creo correctamente");
         }
     } else 
@@ -19,6 +19,11 @@ document.addEventListener('submit', (event) => {
 });
 
 const VerificarNombre = (nombre) => {
+    if(typeof nombre !== "string"){
+        console.log("El nombre debe ser una cadena de texto");
+        return false;
+    }
+
     if(nombre.length < 3 || nombre.length > 30){
         console.log("El nombre debe tener entre 3 y 30 caracteres");
         return false;
@@ -38,6 +43,11 @@ const VerificarNombre = (nombre) => {
 }
 
 const VerificarEmail = (email) => {
+    if(typeof email !== "string"){
+        console.log("El email debe ser una cadena de texto");
+        return false;
+    }
+
     if(email.length === 0 || email.length > 254){
         console.log("El email es obligatorio y no puede superar los 254 caracteres");
         return false;
@@ -87,6 +97,11 @@ const VerificarEmail = (email) => {
 }
 
 const VerificarPassword = (pass, validatePass) => {
+    if(typeof pass !== "string" || typeof validatePass !== "string"){
+        console.log("La contraseña debe ser una cadena de texto");
+        return false;
+    }
+    
     if(pass !== validatePass){
         console.log("Las contraseñas no coinciden");
         return false;
@@ -107,6 +122,7 @@ const VerificarPassword = (pass, validatePass) => {
         return false;
     }
 
+    // const tieneNumero = /\d/.test(pass);
     const tieneNumero = pass.split('').some(c => !isNaN(c));
     if(!tieneNumero){
         console.log("La contraseña debe incluir al menos un numero");
@@ -116,17 +132,28 @@ const VerificarPassword = (pass, validatePass) => {
     return true;
 }
 
-function VerificarRegistro(form){
-    const nombre = form.get("username");
-    const email = form.get("email");
-    const pass = form.get("new-password");
-    const validatePass = form.get("validate-password");
+function VerificarRegistro(formData, formElement){
+    const nombre = formData.get("username");
+    const email = formData.get("email");
+    const pass = formData.get("new-password");
+    const validatePass = formData.get("validate-password");
+    const terminos = formElement.querySelector("input[name='terminos_condiciones']");
+    
+    if(!terminos){
+        console.log("No existe la casilla de terminos");
+        return false;
+    }
 
     const verifNombre = VerificarNombre(nombre);
     const verifEmail = VerificarEmail(email);
     const verifPass = VerificarPassword(pass, validatePass);
 
-    return verifNombre && verifEmail && verifPass;
+
+    if(!terminos.checked){
+        console.log("Debes aceptar los terminos y condiciones");
+    }
+
+    return verifNombre && verifEmail && verifPass && terminos.checked;
 }
 
 function VerificarSesion(form){
@@ -136,7 +163,7 @@ function VerificarSesion(form){
     const verifEmail = VerificarEmail(email);
 
 
-    if(pass.length === 0){
+    if(typeof pass !== "string" || pass.length === 0){
         console.log("Ingresa tu contraseña");
         return false;
     }
